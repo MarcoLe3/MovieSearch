@@ -1,5 +1,6 @@
 <div>
-    <input placeholder=""/>
-    <button>Search</button>
+  <input [(ngModel)]="searchTerm" placeholder="Search movies..." />
+  <button (click)="searchMovie()">Search</button>
 
+  <app-movie-dumb [movies]="movies"></app-movie-dumb>
 </div>
